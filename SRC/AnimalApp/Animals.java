@@ -28,6 +28,20 @@ abstract class Animals {
         return "Eats";
     }
 
+    // getters
+    
+    public int getYearDiscovered() {
+        return yearDiscovered;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBreath() {
+        return breate();
+    }
+
     abstract String move();
 
     abstract String breate();

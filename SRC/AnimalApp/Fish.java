@@ -12,19 +12,34 @@ public class Fish extends Animals {
         this.yearDiscovered = yearDiscovered;
     }
 
+    // Getters
+
+    public int getId() {
+        return id;
+    }
+
+    public String getType() {
+        return "Fish";
+    }
+    
     @Override
-    String move() {
+    public String move() {
         return "swims";
     }
 
     @Override
-    String breate() {
-        return "lungs";
+    public String breate() {
+        return "gills";
     }
 
     @Override
-    String reproduce() {
+    public String reproduce() {
         return "eggs";
+    }
+
+    @Override
+    public String toString() {
+        return " | " + name + " | " + yearDiscovered + " | \n";
     }
 
 }

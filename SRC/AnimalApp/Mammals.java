@@ -1,6 +1,6 @@
 package SRC.AnimalApp;
 
-public class Mammals extends Animals{
+public class Mammals extends Animals {
 
     public Mammals() {
         super();
@@ -12,19 +12,38 @@ public class Mammals extends Animals{
         this.yearDiscovered = yearDiscovered;
     }
 
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getType() {
+        return "Mammal";
+    }
+
+    // Methods
     @Override
-    String move() {
+    public String move() {
         return "walks";
     }
 
     @Override
-    String breate() {
-        return "Uses lungs";
+    public String breate() {
+        return "lungs";
     }
 
     @Override
-    String reproduce() {
+    public String reproduce() {
         return "live births";
     }
-    
+
+    @Override
+    public String toString() {
+        return " | " + name + " | " + yearDiscovered + " | \n";
+    }
+
 }
