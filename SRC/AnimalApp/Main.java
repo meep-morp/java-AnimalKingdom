@@ -92,7 +92,10 @@ public class Main {
         printAnimals(animals, animal -> animal.getYearDiscovered() == 1758);
 
         // Stretch Goals
-        
+        System.out.println("\nMammals Alphabetically\n");
+        animals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        printAnimals(animals, animal -> animal.getClass() == bigfoot.getClass());
+
     }
 
     public static void main(String[] args) {
